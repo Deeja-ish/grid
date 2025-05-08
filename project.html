@@ -5,103 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>my Favorite hobby</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        body{
-            background: linear-gradient(to top, #c471f5 0%, #fa71cd 100%);;
-        }
-        .container{
-            background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
-            margin: 20px auto;
-            max-width: 600px;
-            border-radius: 20px;
-            padding: 10px;
-        }
-        h1{
-            text-align: center;
-        }
-        h2{
-            text-align: center;
-        }
-        button{
-            display: block;
-            margin:0 auto;
-            padding: 10px;
-            border: 1px solid grey;
-            border-radius: 20px;
-            font-size: 20px;
-            transition: all 150ms ease-in-out;
-
-        }
-        button:hover{
-            background-color: plum;
-            cursor: pointer;
-        }
-        img{
-            transition: all 100ms ease-in;
-            max-width: 100%;
-        }
-        img:hover{
-            transform: scale(2);
-
-        }
-        .dark{
-            background-color: black;
-            color: white;
-            font-size: small;
-        }
-        .dark:hover{
-            background-color: white;
-            color:black;
-        }
-        footer{
-            text-align: center;
-            font-size: 15px;
-            font-weight: lighter;
-
-        }
-        a{            
-            color: plum;
-            text-decoration: none;
-        }
-        a:hover{
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        .reading_intro{
-            border-radius: 10px;
-            transition: all 150ms ease-in-out;
-            width: 600px;
-        }
-        .reading_intro:hover{
-            transform: scale(1.3);
-            filter: contrast(80%);
-
-        }
-        .grid{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            margin: 15px 0;
-            grid-gap: 10px;
-        }
-        .grid img{
-            width: 100%;
-            border-radius: 10px;
-            object-fit: cover;
-        }
-        p{
-            font-size: 20px;
-            line-height: 1.5;
-        }
-        .dark_theme{
-            background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
-            color: white;
-        }
-        .dark_theme .container{
-            background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);
-        }
-    </style>
 </head>
-<body >
+<body>
     <button class="dark">
         Change Theme
     </button>
@@ -135,21 +40,4 @@
 <footer>
     Coded by Khadija Goni
 </footer>
-<script>
-    function changeColour(){
-        let body = document.querySelector("body")
-        if(body.classList.contains("dark_theme")){
-            body.classList.remove("dark_theme")
-        }else{
-            body.classList.add("dark_theme")
-        }
-    }
-        document.querySelector(".dark").addEventListener("click", changeColour)
-
-        function joinBookClub(){
-            let name = prompt("Enter your Full Name:")
-            alert("Hello " + name + ", Welcome to Khadija's Book Club")
-        }
-        document.querySelector("#book").addEventListener("click", joinBookClub)
-</script>
 </html>
